@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://niteshift.dev/changelog
+server:
+  name: niteshift
+  transport: unknown        # not published in the docs surveyed
+  url: null                 # no public connection URL located; not fabricated
+evidence:
+  - source: https://niteshift.dev/changelog
+    date: '2026-07-06'
+    note: >-
+      Changelog entry announces "Niteshift MCP server integration for external
+      use" - Niteshift exposes an MCP server so external agents/tools can drive
+      Niteshift tasks. The connection URL/transport is not published on the
+      public docs pages surveyed.
+tools: []
+notes: >-
+  Two distinct MCP facts about Niteshift: (1) Niteshift is an MCP *client* -
+  agents running inside a task connect to 30+ catalog and custom MCP servers
+  (https://docs.niteshift.dev/customizing-agents/mcp.md, OAuth/DCR + API-key +
+  no-auth transports over http/sse/stdio); (2) Niteshift also ships its OWN MCP
+  *server* for external use (changelog 2026-07-06). No candidate tool list is
+  derived because the provider publishes no OpenAPI to ground operationIds.

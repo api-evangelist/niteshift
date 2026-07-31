@@ -1,0 +1,22 @@
+# Niteshift
+
+## Docs
+
+- [Autofix](https://docs.niteshift.dev/autofix.md): Automatically resolve CI failures and address PR review comments in the background.
+- [Automations](https://docs.niteshift.dev/automations.md): Automations launch a Niteshift task on a schedule or when a webhook fires.
+- [Browser automation](https://docs.niteshift.dev/browser-automation.md): The agent drives a real Chromium against your preview, captures screenshots and demo videos, and posts them back to the PR.
+- [MCP](https://docs.niteshift.dev/customizing-agents/mcp.md): Connect agents to external tools and services via the Model Context Protocol.
+- [Plugins](https://docs.niteshift.dev/customizing-agents/plugins.md): Install Claude Code plugins per repository, from marketplaces or git repos.
+- [Skills](https://docs.niteshift.dev/customizing-agents/skills.md): Skills work natively in Niteshift
+- [Browser session](https://docs.niteshift.dev/environment-configuration/browser-session.md): Configure how the agent and your previews authenticate into your application.
+- [Database branches](https://docs.niteshift.dev/environment-configuration/database-branches.md): Connect Neon and every Niteshift task gets its own isolated Postgres branch, with the connection string injected as an env var.
+- [Docker support](https://docs.niteshift.dev/environment-configuration/docker-support.md): Docker-in-Docker is supported. The daemon runs by default, so the setup script and agent can use docker directly.
+- [Overview](https://docs.niteshift.dev/environment-configuration/overview.md): How Niteshift configures the cloud environment each task boots into: Niteshift setup script, env vars, preview ports, and tunnels.
+- [Setup agent](https://docs.niteshift.dev/environment-configuration/setup-agent.md): An AI agent interviews your repository, writes niteshift-setup.sh, and verifies the environment boots.
+- [Niteshift setup script](https://docs.niteshift.dev/environment-configuration/setup-script.md): A bash script that gives every task a working dev environment, ready for the agent.
+- [GitHub](https://docs.niteshift.dev/interfaces/github.md): Trigger and observe Niteshift tasks from pull requests, with check runs and PR comments wired to your repository.
+- [Linear](https://docs.niteshift.dev/interfaces/linear.md): Link Linear issues to Niteshift tasks for automatic status transitions, progress comments, and PR attachments.
+- [Slack](https://docs.niteshift.dev/interfaces/slack.md): Trigger Niteshift tasks from Slack. DM the bot for private work or @mention it in a channel for team-visible tasks.
+- [Introduction](https://docs.niteshift.dev/introduction.md): Niteshift, cloud coding agents that close the loop
+- [Quickstart](https://docs.niteshift.dev/quickstart.md): Sign in, connect a repository, pick an agent, and run your first Niteshift task.
+- [Tasks](https://docs.niteshift.dev/tasks.md): A task is a coding session running in its own cloud environment, the unit of work in Niteshift.

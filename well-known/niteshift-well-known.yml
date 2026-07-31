@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+source: https://niteshift.dev/.well-known/
+hosts:
+  - host: https://niteshift.dev
+    documents:
+      - path: /.well-known/oauth-authorization-server   # RFC 8414
+        status: 200
+        file: niteshift-oauth-authorization-server.json
+      - path: /.well-known/security.txt                 # RFC 9116
+        status: 404
+      - path: /.well-known/openid-configuration          # OIDC discovery
+        status: 404
+      - path: /.well-known/api-catalog                    # RFC 9727
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://auth.niteshift.dev
+    documents:
+      - path: /.well-known/openid-configuration          # OIDC discovery (issuer host)
+        status: 200
+        file: niteshift-openid-configuration.json
+notes: >-
+  Niteshift's authorization server is at auth.niteshift.dev (issuer). The
+  RFC 8414 oauth-authorization-server metadata is served from the apex host
+  niteshift.dev and additionally advertises scopes_supported and a dynamic
+  client registration endpoint. OIDC discovery resolves on the auth host.

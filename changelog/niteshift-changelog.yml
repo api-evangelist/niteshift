@@ -1,0 +1,37 @@
+generated: '2026-07-20'
+method: searched
+source: https://niteshift.dev/changelog
+scheme: dated
+cadence: weekly
+current: '2026-07-13'
+entries:
+  - date: '2026-07-13'
+    breaking: false
+    highlights:
+      - Automation run history with links to the tasks and PRs each run produced.
+      - GPT-5.6 Sol set as the new default model for Codex tasks.
+      - Grok 4.5 support added for Cursor agent tasks.
+      - Autofix toggle moved to the composer toolbar with status indicators.
+  - date: '2026-07-06'
+    breaking: false
+    highlights:
+      - Task orchestration - agents can create and coordinate sub-tasks.
+      - Niteshift MCP server integration for external use.
+      - Shareable HTML pages for agent-built content.
+      - Claude Sonnet 5 model added.
+  - date: '2026-06-29'
+    breaking: false
+    highlights:
+      - Cursor agent with Composer 2.5 model support.
+      - Sortable task list with customizable columns.
+  - date: '2026-06-22'
+    breaking: false
+    highlights:
+      - Floating model versions that auto-update to the latest releases.
+      - Pinned tasks sync across devices.
+  - date: '2026-06-15'
+    breaking: false
+    highlights:
+      - General availability of Niteshift.
+      - Codex goals support with persistent objectives.
+      - Account-level default model settings.

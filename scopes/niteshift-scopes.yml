@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://niteshift.dev/.well-known/oauth-authorization-server
+docs: https://auth.niteshift.dev/.well-known/openid-configuration
+schemes:
+  - name: OAuth2
+    source: well-known/niteshift-oauth-authorization-server.json
+    issuer: https://auth.niteshift.dev
+    flows:
+      - flow: authorizationCode
+        authorizationUrl: https://auth.niteshift.dev/oauth2/authorize
+        tokenUrl: https://auth.niteshift.dev/oauth2/token
+      - flow: deviceCode
+        deviceAuthorizationUrl: https://auth.niteshift.dev/oauth2/device_authorization
+        tokenUrl: https://auth.niteshift.dev/oauth2/token
+scopes:
+  - scope: openid
+    description: OpenID Connect authentication; issue an ID token.
+    sources: [well-known/niteshift-oauth-authorization-server.json]
+  - scope: profile
+    description: Access to the end user's basic profile claims.
+    sources: [well-known/niteshift-oauth-authorization-server.json]
+  - scope: email
+    description: Access to the end user's email address claim.
+    sources: [well-known/niteshift-oauth-authorization-server.json]
+  - scope: offline_access
+    description: Issue a refresh token for long-lived, offline access.
+    sources: [well-known/niteshift-oauth-authorization-server.json]
+notes: >-
+  Scopes are the standard OIDC set advertised by scopes_supported in the
+  published RFC 8414 authorization-server metadata. No resource-specific
+  scope taxonomy is published (no provider OpenAPI/API reference exists).

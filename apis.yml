@@ -1,8 +1,28 @@
 aid: niteshift
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/niteshift.png
 name: Niteshift
-description: 'Niteshift is a company surfaced as a portfolio company of greylock and added to the API
-  Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Niteshift is the full-stack cloud for coding agents. Engineering teams define
+  their dev environment, tools, and policies once, then run frontier or
+  open-source coding agents (Claude Code, Codex, Cursor, OpenCode, Pi) inside
+  fully configured, isolated cloud environments that provision databases, auth,
+  workers, and seeded data, then verify changes with tests, browser checks, and
+  CI before opening a PR. Tasks are triggered and observed from GitHub, Linear,
+  and Slack, extended via the Model Context Protocol, and billed as usage-based
+  active agent time. Founded 2026 by Datadog veterans Sajid Mehmood and Conor
+  Branagan; seed-funded by Greylock.
 url: https://raw.githubusercontent.com/api-evangelist/niteshift/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Infrastructure
+- Coding Agents
+- AI Agents
+- Developer Tools
+- Cloud Development Environments
+- DevOps
+- Automation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +51,43 @@ maintainers:
 common:
 - type: Website
   url: https://niteshift.dev/
+- type: DeveloperPortal
+  url: https://docs.niteshift.dev
+- type: Documentation
+  url: https://docs.niteshift.dev
+- type: Quickstart
+  url: https://docs.niteshift.dev/quickstart
+- type: Pricing
+  url: https://niteshift.dev/pricing
+- type: Blog
+  url: https://niteshift.dev/blog
+- type: Login
+  url: https://niteshift.dev/login
+- type: Support
+  url: https://niteshift.dev/support
+- type: TermsOfService
+  url: https://niteshift.dev/terms
+- type: PrivacyPolicy
+  url: https://niteshift.dev/privacy-policy
+- type: ChangeLog
+  url: https://niteshift.dev/changelog
+- type: ChangeLog
+  name: Niteshift Changelog (artifact)
+  url: changelog/niteshift-changelog.yml
+- type: LLMsTxt
+  url: llms/niteshift-llms.txt
+- type: WellKnown
+  url: well-known/niteshift-well-known.yml
+- type: Authentication
+  url: authentication/niteshift-authentication.yml
+- type: OAuthScopes
+  url: scopes/niteshift-scopes.yml
+- type: MCPServer
+  url: mcp/niteshift-mcp.yml
+- type: DomainSecurity
+  url: security/niteshift-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1
